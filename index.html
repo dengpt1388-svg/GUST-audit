@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUST — Стратегия B2B-роста</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                bg: '#050b12',
+                'bg-alt': '#071320',
+                card: 'rgba(12, 27, 43, 0.6)',
+                accent: '#18a3a8',
+                'accent-soft': '#29c7c3',
+                text: '#f5f7fb',
+                'text-soft': '#c0cad9',
+                muted: '#7f8ca3',
+                border: 'rgba(255, 255, 255, 0.08)',
+                'border-hover': 'rgba(255, 255, 255, 0.2)',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            backgroundImage: {
+              'radial-glow': 'radial-gradient(circle at 10% 0%, rgba(24, 163, 168, 0.1) 0%, transparent 40%)',
+              'radial-glow-bottom': 'radial-gradient(circle at 90% 100%, rgba(13, 72, 120, 0.15) 0%, transparent 40%)',
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050b12;
+        color: #f5f7fb;
+      }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050b12;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1f2937;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #374151;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
